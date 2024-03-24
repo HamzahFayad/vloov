@@ -1,38 +1,80 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+*,html, body{
+  margin: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100vw;
+  overflow-x: hidden;
+}
+.main{
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    color: var(--dark);
+}
+/*TYPOGRAPHY*/
+h1,h2,h3,h4{
+
+}
+h1{
+  font-size: 1.75rem;
+  font-family: "Shrikhand";
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 > span{
+  color: var(--red);
+  text-decoration: underline;
+  font-size: 2.5rem;
+}
+a{
+    font-family: "Shrikhand";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/*Colors*/
+:root {
+  --dark: #2A3136;
+  --pink: #F1BCCF;
+  --red: #9C3136;
+  --blue: #8CA8B2;
+}
+::selection {
+  background: var(--pink);
+}
+/*BUTTONS*/
+
+/*LINKS*/
+.grab{
+  cursor: pointer;
+}
+a{
+  text-decoration: none;
+  color: var(--dark);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/*NAV*/
+.nav{
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+@media (max-width: 768px){
+  .nav{
+      justify-content: center;
+  }
+    .nav-right a {
+      margin-left: 0 !important;
+      padding: 0 2rem;
+    }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar {
+  padding: 1rem 2.5rem;
+}
+.nav-left .logo{
+  max-width: 80px;
+  display: block;
+  flex: 1;
+}
+.nav-right a{
+  margin-left: 5rem;
 }
