@@ -14,6 +14,9 @@ html,body{
     margin-top: 2rem;
     color: var(--dark);
 }
+.space{
+  margin-bottom: 3rem;
+}
 /*TYPOGRAPHY*/
 h2,h3,h4,p,a{
   font-family: "Mulish";
@@ -31,7 +34,16 @@ h1 > span{
 a{
     font-family: "Shrikhand";
 }
-
+/**/
+img{
+  max-width: 300px;
+}
+@media (max-width: 599px) {
+  img{
+    width: 100%;
+    max-width: 100%;
+  }
+}
 /*Colors*/
 :root {
   --dark: #2A3136;
