@@ -10,6 +10,7 @@ function App() {
           <span>vloov</span> <br />
           THE WAY TO FLOW .
         </h1>
+        <p>Lorem Ipsum</p>
       </div>
     </div>
   );

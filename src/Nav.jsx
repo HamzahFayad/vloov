@@ -7,9 +7,9 @@ function Nav() {
         <img className="logo grab" src="./images/logos/logo1.png" alt="logo" />
       </div>
       <div className="navbar nav-right">
-        <a href="/">Features</a>
-        <a href="/">About</a>
-        <a href="/">Contact</a>
+        <a href="/">Login</a>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
       </div>
     </div>
   );

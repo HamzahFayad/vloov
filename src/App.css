@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
 *,html, body{
   margin: 0;
   box-sizing: border-box;
@@ -13,8 +15,8 @@ html,body{
     color: var(--dark);
 }
 /*TYPOGRAPHY*/
-h1,h2,h3,h4{
-
+h2,h3,h4,p,a{
+  font-family: "Mulish";
 }
 h1{
   font-size: 1.75rem;
