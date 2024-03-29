@@ -3,6 +3,7 @@
 
 *,html, body{
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 html,body{
@@ -16,6 +17,9 @@ html,body{
 }
 .space{
   margin-bottom: 3rem;
+}
+.gap{
+  padding: 3.5rem 0;
 }
 /*TYPOGRAPHY*/
 h2,h3,h4,p,a{
@@ -38,7 +42,7 @@ a{
 img{
   max-width: 300px;
 }
-@media (max-width: 599px) {
+@media (max-width: 768px) {
   img{
     width: 100%;
     max-width: 100%;
@@ -91,4 +95,24 @@ a{
 }
 .nav-right a{
   margin-left: 5rem;
+}
+
+.text-wrap{
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: justify;
+}
+/*Features*/
+.features-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 1.5rem;
+}
+@media screen and (min-width: 1400px) {
+  .features-img{
+    gap: 3rem;
+  }
 }
