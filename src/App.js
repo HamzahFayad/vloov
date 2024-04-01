@@ -21,6 +21,8 @@ let features = [
   },
 ];
 
+let circles = ["c1", "c2"];
+
 function App() {
   useEffect(() => {
     gsap.to(".circles", {
@@ -33,7 +35,37 @@ function App() {
         scrub: true,
       },
     });
-    //    gsap.to(".circles", { rotation: "+=360", duration: 3 });
+    gsap.fromTo(
+      ".c1",
+      {
+        x: 0,
+        scale: 1.25,
+      },
+      {
+        x: "30vw",
+        duration: 2,
+        scale: 1.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut",
+      }
+    );
+
+    gsap.fromTo(
+      ".c2",
+      {
+        x: 0,
+        scale: 1.25,
+      },
+      {
+        x: "-30vw",
+        scale: 1.5,
+        duration: 2,
+        repeat: -1,
+        yoyo: true,
+        ease: "power2.inOut",
+      }
+    );
   }, []);
 
   return (
@@ -47,6 +79,9 @@ function App() {
               THE WAY TO FLOW .
             </h1>
             <img className="circles" src="./decos/circles.gif" alt="circles" />
+            {circles.map((c) => {
+              return <div className={"moving-circles " + c} key={c}></div>;
+            })}
           </div>
         </div>
         <div className="infos text-wrap gap2">
@@ -60,11 +95,6 @@ function App() {
             widgets with ease, customizing your workspace to match your current
             focus
           </p>
-        </div>
-        <div className="features-img gap">
-          {features.map((f) => {
-            return <img src={f.img} alt={"img-" + f.id} key={"img-" + f.id} />;
-          })}
         </div>
         <div className="features-img gap">
           {features.map((f) => {
