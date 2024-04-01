@@ -21,6 +21,9 @@ html,body{
 .gap{
   padding: 3.5rem 0;
 }
+.gap2{
+  padding: 5rem 0;
+}
 /*TYPOGRAPHY*/
 h2,h3,h4,p,a{
   font-family: "Mulish";
@@ -35,8 +38,12 @@ h1 > span{
   text-decoration: underline;
   font-size: 2.5rem;
 }
-a{
+a,strong{
     font-family: "Shrikhand";
+}
+strong{
+  color: var(--red);
+  text-decoration: underline;
 }
 /**/
 img{
@@ -54,6 +61,7 @@ img{
   --pink: #F1BCCF;
   --red: #9C3136;
   --blue: #8CA8B2;
+  --yellow: #FFC600;
 }
 ::selection {
   background: var(--pink);
@@ -95,6 +103,21 @@ a{
 }
 .nav-right a{
   margin-left: 5rem;
+}
+
+/*Header*/
+.header{
+position: relative;
+padding: 2rem 0;
+} 
+.header .circles{
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 3rem;
+  max-width: 250px;
+  margin: auto;
+  mix-blend-mode: multiply;
 }
 
 .text-wrap{
