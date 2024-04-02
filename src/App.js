@@ -40,11 +40,13 @@ function App() {
       {
         x: 0,
         scale: 1.25,
+        background: "#9C3136",
       },
       {
         x: "30vw",
         duration: 2,
         scale: 1.5,
+        background: "#F1BCCF",
         repeat: -1,
         yoyo: true,
         ease: "power2.inOut",
@@ -56,11 +58,13 @@ function App() {
       {
         x: 0,
         scale: 1.25,
+        background: "#F1BCCF",
       },
       {
         x: "-30vw",
         scale: 1.5,
         duration: 2,
+        background: "#9C3136",
         repeat: -1,
         yoyo: true,
         ease: "power2.inOut",
@@ -95,6 +99,16 @@ function App() {
             widgets with ease, customizing your workspace to match your current
             focus
           </p>
+        </div>
+        <div className="features-img gap">
+          {features.map((f) => {
+            return <img src={f.img} alt={"img-" + f.id} key={"img-" + f.id} />;
+          })}
+        </div>
+        <div className="features-img">
+          {features.map((f) => {
+            return <img src={f.img} alt={"img-" + f.id} key={"img-" + f.id} />;
+          })}
         </div>
         <div className="features-img gap">
           {features.map((f) => {
